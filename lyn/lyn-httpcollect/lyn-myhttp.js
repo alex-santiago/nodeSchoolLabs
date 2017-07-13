@@ -9,10 +9,18 @@ module.exports = {
 };
 
 function processResponse(response) {
-		response.setEncoding('utf8');
-		// response.pipe
-		response.on('data', function (data) {
-			console.log(data);
-		});
-		response.on('error', console.error);
+	var len = 0;
+	var stream = '';
+
+	response.setEncoding('utf8');
+	response.on('data', function (data) {
+		stream += data;
+		len += data.length;
+	});
+	response.on('end', function(end) {
+		console.log(len);
+		console.log(stream);
+	});
+	response.on('error', console.error);
 }
+
