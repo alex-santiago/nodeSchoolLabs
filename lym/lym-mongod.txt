@@ -1,0 +1,9 @@
+✓ mongod v3.4.4
+
+# PASS
+
+Your solution to MONGOD passed!
+
+You have 8 challenges left.
+Type 'learnyoumongo' to show the menu.
+

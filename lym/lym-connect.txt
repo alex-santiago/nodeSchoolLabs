@@ -1,0 +1,9 @@
+✓ Successfully connected to MongoDB
+
+# PASS
+
+Your solution to CONNECT passed!
+
+You have 7 challenges left.
+Type 'learnyoumongo' to show the menu.
+
